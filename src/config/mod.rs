@@ -4,6 +4,11 @@ use tracing::info;
 
 #[derive(Debug, Deserialize)]
 pub struct CliConfig {
+    pub global: Global,
+}
+
+#[derive(Debug, Deserialize)]
+pub struct Global {
     pub debug: bool,
 }
 
